@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My cool Pokemons{% endblock %}
+
+{% block body %}
+    <form action="{{ path('pokemon') }}" method="get" name="search-pokemon-form">
+        <div class="form-group">
+            <input name="q"
+                   class="form-control search-field"
+                   placeholder="Type to search Pokemons!"
+                   autocomplete="off"
+                   autofocus
+                   data-no-results-message="No results."
+            >
+        </div>
+    </form>
+
+    <div id="results">
+    </div>
+{% endblock %}

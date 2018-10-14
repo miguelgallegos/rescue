@@ -1,0 +1,14 @@
+{% for p in pokemons %}
+        <article class="post">
+            <div class="name">
+                    {{ p.name |raw }}
+            </div>
+
+                {% for type in p.types %}
+                    <span class="metadata"><i class="fa fa-calendar"></i> {{ type.name |raw}}</span>
+                {% endfor %}
+    
+        </article>
+    {% else %}
+        <div class="well">Ouch! No Pokemons found :( </div>
+    {% endfor %}
