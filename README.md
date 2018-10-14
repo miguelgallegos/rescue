@@ -3,6 +3,8 @@ Rescue Test
  **Instructions**
  
     git clone https://github.com/miguelgallegos/rescue.git
+    
+    cd rescue
 
     composer install
 
