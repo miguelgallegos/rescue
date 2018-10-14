@@ -22,7 +22,7 @@ Front-end is being handled through Webpack Encore:
 For Mac OS thru **brew**
 
     brew install yarn
-Then continue with modules:
+Then continue with jquery installation and compiling:
 
     yarn add jquery
 
