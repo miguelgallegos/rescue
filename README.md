@@ -8,7 +8,7 @@ Rescue Test
 
     composer install
 
-In MySQL, create a database called 'pkm'. The application is assuming that there is a DB in localhost:3306, with **root** and no password.
+In MySQL, create a database called 'pkm'. The application is assuming that there is a DB in localhost:3306, with **root** user and no password.
 
 Proceed to with DB tables creation and initialization:
 
