@@ -1,21 +1,41 @@
-# rescue
-Instructions
+Rescue Test
 
-git clone https://github.com/miguelgallegos/rescue.git
+ **Instructions**
+ 
+    git clone https://github.com/miguelgallegos/rescue.git
 
-composer install
+    composer install
 
-create schema pkm << add migration
+In MySQL, create a database called 'pkm'. The application is assuming that there is a DB in localhost:3306, with **root** and no password.
 
-bin/console doctrine:migrations:migrate --no-interaction
+Proceed to with DB tables creation and initialization:
 
-bin/console app:import-pokemons https://gist.githubusercontent.com/andygroff/274283a38f2786796df57e11738d6bba/raw/f8eb9332ac08a4ee75767bcd76904f001cb6ec37/pokemon.json
+    bin/console doctrine:migrations:migrate --no-interaction
 
-yarn install
-brew install yarn
-yarn add jquery
-yarn encore dev
+    bin/console app:import-pokemons https://gist.githubusercontent.com/andygroff/274283a38f2786796df57e11738d6bba/raw/f8eb9332ac08a4ee75767bcd76904f001cb6ec37/pokemon.json
 
-bin/console server:run
+Front-end is being handled through Webpack Encore:
 
-http://127.0.0.1:8001/pokemon
+    yarn install
+For Mac OS thru **brew**
+
+    brew install yarn
+Then continue with modules:
+
+    yarn add jquery
+
+    yarn encore dev
+
+Finally, run the app as:
+
+    bin/console server:run
+
+And open the following URL in a browser: 
+
+    http://127.0.0.1:8001/pokemon
+    //or any given port
+
+
+
+
+
